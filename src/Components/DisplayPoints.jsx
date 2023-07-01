@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Papa from "papaparse";
 import GoogleMapReact from "google-map-react";
+import HoverInfo from "./HoverInfo";
 
 const Marker = () => <img src='/marker-icon.png' alt='marker' />;
 
-//AIzaSyA9E6uWz77o_rcaq9v8hVtIiYRB7h2oE6U
 const DisplayPoints = () => {
   const [coordinates, setCoordinates] = useState([]);
+  const [hoveredMarkers, setHoveredMarkers] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/Points/lon_lat.csv");
+      const response = await fetch("/Points/countries.csv");
       const text = await response.text();
 
       // Parse the CSV data using Papa Parse
@@ -30,29 +31,71 @@ const DisplayPoints = () => {
     fetchData();
   }, []);
 
-  console.log("coordinate", coordinates);
+  const handleMarkerHover = (markerId) => {
+    setHoveredMarkers((prevMarkers) => {
+      const updatedMarkers = [...prevMarkers];
+      updatedMarkers[markerId] = true;
+      return updatedMarkers;
+    });
+  };
+
+  const handleMarkerLeave = (markerId) => {
+    setHoveredMarkers((prevMarkers) => {
+      const updatedMarkers = [...prevMarkers];
+      updatedMarkers[markerId] = false;
+      return updatedMarkers;
+    });
+  };
+
   const defaultProps = {
     center: {
       lat: 31.4427071,
       lng: 74.2716663,
     },
-    zoom: 13,
+    zoom: 1,
+  };
+
+  const mapOptions = {
+    styles: [
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#043744" }],
+      },
+      {
+        featureType: "landscape",
+        elementType: "geometry",
+        stylers: [{ color: "#075e74" }],
+      },
+      // Add more styles for other map elements as needed
+    ],
   };
 
   return (
-    <div style={{ height: "100vh", width: "100%" }}>
+    <div style={{ height: "101vh", width: "80%" }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyA9E6uWz77o_rcaq9v8hVtIiYRB7h2oE6U" }}
+        bootstrapURLKeys={{key: "AIzaSyA9E6uWz77o_rcaq9v8hVtIiYRB7h2oE6U" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
+        options={mapOptions}
       >
-        {coordinates?.map((coordinate) => (
-          <Marker
+         {coordinates?.map((coordinate) => (
+          <div
             key={coordinate.id}
             lat={coordinate.Lat}
             lng={coordinate.Lon}
-          />
+            onMouseEnter={() => handleMarkerHover(coordinate.id)}
+            onMouseLeave={() => handleMarkerLeave(coordinate.id)}
+          >
+            <Marker />
+            {hoveredMarkers[coordinate.id] && (
+              <div style={{ position: "relative" }}>
+                <HoverInfo />
+              </div>
+            )}
+          </div>
         ))}
+    
       </GoogleMapReact>
     </div>
   );

@@ -1,0 +1,35 @@
+.top-bar{
+    height: 80px;
+    background-color: #075e74;
+    display: flex;
+    justify-content: center;
+}
+
+
+.input-field{
+    height: 38px;
+    width: 400px;
+    transform: translateY(50%);
+    background-color:#043744;
+    border:none;
+}
+
+.input-field::placeholder {
+    color:#075e74; /* Set the color of the placeholder text */
+    font-size: 16px ;
+    padding: 10px;
+     /* Apply italic font style to the placeholder text */
+    /* Add any other styles you want for the placeholder text */
+  }
+  
+
+.search-btn{
+    height: 40px;
+    width: 30px;
+    transform: translateY(50%);
+    background-color:#043744;
+    border:none;
+}
+
+
+/* Path: maps\src\Components\Map\index.css */

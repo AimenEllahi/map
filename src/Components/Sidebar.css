@@ -1,0 +1,28 @@
+.sidebar {
+    margin-top: 5px;
+    width: 20%; /* Adjust the width according to your design */
+    height: 100vh; /* Set the desired height */
+    background-color: #075e74; /* Set the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .white-rec {
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    border: 2px solid cyan;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+
+  .white-rec:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+/*   
+  .white-rec.active {
+    background-color: white;
+  }
+   */
