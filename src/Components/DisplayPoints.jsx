@@ -3,7 +3,12 @@ import Papa from "papaparse";
 import GoogleMapReact from "google-map-react";
 import HoverInfo from "./HoverInfo";
 
-const Marker = () => <img src='/marker-icon.png' alt='marker' />;
+const Marker = () => <img style={{
+  position : "relative",
+  zIndex: 1,
+  width: '35px',
+  height: '35px',
+}} src='/Visuals/slice77@10x.png' alt='marker' />;
 
 const DisplayPoints = () => {
   const [coordinates, setCoordinates] = useState([]);
@@ -67,8 +72,21 @@ const DisplayPoints = () => {
         elementType: "geometry",
         stylers: [{ color: "#075e74" }],
       },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#075e74" }],
+      },
+      
+        {
+          featureType: "poi",
+          elementType: "labels",
+          stylers: [{ visibility: "off" }],
+        },
       // Add more styles for other map elements as needed
     ],
+    gestureHandling: "greedy",
+    disableDefaultUI: true,
   };
 
   return (

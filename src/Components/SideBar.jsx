@@ -17,6 +17,7 @@ function Sidebar() {
       <div className='content-container' style={{
         height: '95%',
         width: '90%',
+        color: 'white',
         // border: '1px solid black',
       }} >
         {/*Risk Types*/}
@@ -37,7 +38,7 @@ function Sidebar() {
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>ORGANIZATIONAL HARM</span> 
             </div>
         </div>
 
@@ -54,12 +55,19 @@ function Sidebar() {
                 <FaSortUp color='white' style={{paddingTop:"8px"}} />
             </div>
             <div style={{display: "flex",padding: "5px"}}>
-                   <div className='white-rec' style={{background: "lime"}} ></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                   <div className='white-rec' style={{background: "lime", borderColor: "lime"}} ></div>
+                     <span style={{padding: "0 10px"}}>4.0 MINIMUM</span> 
+                     <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
+                      <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", marginRight: "4px", borderRadius: "10px" }}>+</button>
+                      <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", borderRadius: "10px" }}>-</button>
+                    </div>
             </div>
-            <div style={{display: "flex",padding: "0 5px"}}>
+            <div style={{display: "flex",padding: "0 5px", justifyContent:"space-between" }}>
                    <div className='white-rec' style={{borderRadius: "10px"}} ></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>COLOR</span>
+                     <span>|</span>
+                     <span style={{padding: "0 10px"}}>ABSOLUTE</span> 
+                     <div className='white-rec' style={{borderRadius: "10px"}} ></div>
             </div>
         </div>
         
@@ -77,11 +85,15 @@ function Sidebar() {
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>LAST 2 DAYS</span> 
+                     <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
+                      <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", marginRight: "4px", borderRadius: "10px" }}>+</button>
+                      <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", borderRadius: "10px" }}>-</button>
+                    </div>
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>PREDICTIVE</span> 
             </div>
         </div>
 
@@ -99,27 +111,27 @@ function Sidebar() {
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>TERRORISM</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>CIVIL UNREST</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>WAR + CONFLICT</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>CRIME</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec' ></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>KIDNAPPING</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>ASSAULT</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
@@ -143,31 +155,31 @@ function Sidebar() {
                    <div className='right-angle' >
                           <FaAngleRight color='cyan'/>
                    </div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>AMSTERDAM</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
             <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>NEWYORK CITY</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>ABUDABHI</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
             <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>MIAMI</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span style={{padding: "0 10px"}}>AUSTRALIA</span> 
             </div>
         </div>
 

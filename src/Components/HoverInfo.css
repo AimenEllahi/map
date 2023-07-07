@@ -36,12 +36,13 @@
 /*expanded*/
 .hover-info-container-x{
     border-left: 1px solid white;
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    height: 550px;
     background-color: #032933;
     padding: 0 10px;
     color: cyan;
 }
+
 
 .cross-icon:hover{
     cursor: pointer;
