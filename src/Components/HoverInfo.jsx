@@ -38,7 +38,7 @@ function HoverInfo() {
             </div>
             <span className="country-name" style={{ color: '#0B6E85', textAlign: "left"}}>NY, USA</span>
             <div className="info-content" style={{ textAlign: "left", color: 'white' }}>
-              <FaAngleRight color="cyan" size={16} style={{ padding: "10px 0" }} />
+              <FaAngleRight color="#0B6E85" size={16} style={{ padding: "10px 0" }} />
               <div style={{fontWeight:"500", marginTop: "10px"}}>
                 <span>TERRORIST THREAT</span>
                 <br/>
@@ -49,7 +49,7 @@ function HoverInfo() {
             </div>
             <div className="expand-div" onClick={handleExpand}>
               <span style={{ color: 'white', fontSize: "24px" }}>Expand</span>
-              <FaAngleRight color="cyan" size={20} style={{ padding: "5px 0" }} />
+              <FaAngleRight color="#0B6E85" size={20} style={{ padding: "5px 0" }} />
             </div>
           </div>
         </div>
