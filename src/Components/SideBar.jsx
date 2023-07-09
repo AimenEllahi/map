@@ -29,16 +29,16 @@ function Sidebar() {
                 padding: "0 8px",
                 justifyContent: "space-between",
             }} >
-                <span>RISK TYPES</span>
+                <span className='heading-name'>RISK TYPES</span>
                 <FaSortUp color='white' style={{paddingTop:"8px"}} />
             </div>
-            <div style={{display: "flex",padding: "5px"}}>
+            <div  style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec' ></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span className='subheading-name' >PHYSICAL HARM</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>ORGANIZATIONAL HARM</span> 
+                     <span className='subheading-name'>ORGANIZATIONAL HARM</span> 
             </div>
         </div>
 
@@ -51,12 +51,12 @@ function Sidebar() {
                 padding: "0 8px",
                 justifyContent: "space-between",
             }} >
-                <span>RISK SCORE</span>
+                <span  className='heading-name'>RISK SCORE</span>
                 <FaSortUp color='white' style={{paddingTop:"8px"}} />
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec' style={{background: "lime", borderColor: "lime"}} ></div>
-                     <span style={{padding: "0 10px"}}>4.0 MINIMUM</span> 
+                     <span className='subheading-name'>4.0 MINIMUM</span> 
                      <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
                       <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", marginRight: "4px", borderRadius: "10px" }}>+</button>
                       <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", borderRadius: "10px" }}>-</button>
@@ -64,9 +64,9 @@ function Sidebar() {
             </div>
             <div style={{display: "flex",padding: "0 5px", justifyContent:"space-between" }}>
                    <div className='white-rec' style={{borderRadius: "10px"}} ></div>
-                     <span style={{padding: "0 10px"}}>COLOR</span>
+                     <span className='subheading-name'>COLOR</span>
                      <span>|</span>
-                     <span style={{padding: "0 10px"}}>ABSOLUTE</span> 
+                     <span className='subheading-name'>ABSOLUTE</span> 
                      <div className='white-rec' style={{borderRadius: "10px"}} ></div>
             </div>
         </div>
@@ -80,12 +80,12 @@ function Sidebar() {
                 padding: "0 8px",
                 justifyContent: "space-between",
             }} >
-                <span>TIME PERIOD</span>
+                <span  className='heading-name' >TIME PERIOD</span>
                 <FaSortUp color='white' style={{paddingTop:"8px"}} />
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>LAST 2 DAYS</span> 
+                     <span className='subheading-name'>LAST 2 DAYS</span> 
                      <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
                       <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", marginRight: "4px", borderRadius: "10px" }}>+</button>
                       <button style={{ border: "2px solid cyan", background: "transparent", color: "white", padding: "2px 14px", borderRadius: "10px" }}>-</button>
@@ -93,7 +93,7 @@ function Sidebar() {
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PREDICTIVE</span> 
+                     <span className='subheading-name'>PREDICTIVE</span> 
             </div>
         </div>
 
@@ -106,36 +106,36 @@ function Sidebar() {
                 padding: "0 8px",
                 justifyContent: "space-between",
             }} >
-                <span>FILTERS</span>
+                <span  className='heading-name'>FILTERS</span>
                 <FaSortUp color='white' style={{paddingTop:"8px"}} />
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>TERRORISM</span> 
+                     <span className='subheading-name'>TERRORISM</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>CIVIL UNREST</span> 
+                   <span className='subheading-name'>CIVIL UNREST</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>WAR + CONFLICT</span> 
+                     <span className='subheading-name'>WAR + CONFLICT</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>CRIME</span> 
+                     <span className='subheading-name'>CRIME</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec' ></div>
-                     <span style={{padding: "0 10px"}}>KIDNAPPING</span> 
+                     <span className='subheading-name'>KIDNAPPING</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>ASSAULT</span> 
+                     <span className='subheading-name'>ASSAULT</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='white-rec'></div>
-                     <span style={{padding: "0 10px"}}>PHYSICAL HARM</span> 
+                     <span className='subheading-name'>PHYSICAL HARM</span> 
             </div>
         </div>
 
@@ -148,38 +148,38 @@ function Sidebar() {
                 padding: "0 8px",
                 justifyContent: "space-between",
             }} >
-                <span>SHORTCUTS</span>
+                <span  className='heading-name'>SHORTCUTS</span>
                 <FaSortUp color='white' style={{paddingTop:"8px"}} />
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='right-angle' >
                           <FaAngleRight color='cyan'/>
                    </div>
-                     <span style={{padding: "0 10px"}}>AMSTERDAM</span> 
+                     <span className='subheading-name'>AMSTERDAM</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
             <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>NEWYORK CITY</span> 
+                     <span className='subheading-name'>NEWYORK CITY</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>ABUDABHI</span> 
+                     <span className='subheading-name'>ABUDABHI</span> 
             </div>
             <div style={{display: "flex",padding: "0 5px"}}>
             <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>MIAMI</span> 
+                     <span className='subheading-name'>MIAMI</span> 
             </div>
             <div style={{display: "flex",padding: "5px"}}>
                    <div className='right-angle' >
                           <FaAngleRight color='cyan' />
                    </div>
-                     <span style={{padding: "0 10px"}}>AUSTRALIA</span> 
+                     <span className='subheading-name'>AUSTRALIA</span> 
             </div>
         </div>
 
@@ -191,7 +191,7 @@ function Sidebar() {
                 padding: "0 8px",
                 
             }} >
-                <span>DISPLAY</span>
+                <span  className='heading-name'>DISPLAY</span>
                 <div style={{
                     width: "80%",
                     display: "flex",

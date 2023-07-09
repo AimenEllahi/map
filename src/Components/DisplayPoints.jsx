@@ -65,17 +65,17 @@ const DisplayPoints = () => {
       {
         featureType: "water",
         elementType: "geometry",
-        stylers: [{ color: "#043744" }],
+        stylers: [{ color: "#042F38" }],
       },
       {
         featureType: "landscape",
         elementType: "geometry",
-        stylers: [{ color: "#075e74" }],
+        stylers: [{ color: "#0B6E85" }],
       },
       {
         featureType: "road",
         elementType: "geometry",
-        stylers: [{ color: "#075e74" }],
+        stylers: [{ color: "#0B6E85" }],
       },
       
         {

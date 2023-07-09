@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaAngleRight } from 'react-icons/fa';
+import { FaAngleRight, FaTimes } from 'react-icons/fa';
 import './HoverInfo.css';
 import ExpandedInfo from './ExpandedInfo';
 
@@ -10,7 +10,10 @@ function HoverInfo() {
     setExpanded(!expanded); // Toggle the value of 'expanded'
   };
 
-  const countryName = "Country Name";
+  const handleCrossClick = () => {
+    setExpanded(false); // Set 'expanded' to false when the cross icon is clicked
+  };
+  
   const info = "some info about the country threats";
 
   return (
@@ -21,15 +24,31 @@ function HoverInfo() {
     >
       {!expanded && (
         <div className="hover-info-container">
+          <div className="cross-icon" onClick={handleCrossClick}>
+            <FaTimes color="white" size={16} />
+          </div>
           <div className="country-info">
-            <h2 className="country-name">{countryName}</h2>
-            <span style={{ color: 'white' }}>Location of country</span>
+            <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+              <span className="country-name" style={{ color: 'white' }}> NEW YORK CITY</span>
+              
+              <div style={{ position: "relative", width: "30px", height: "30px" }}>
+                <img style={{ width: "100%" }} src="/Visuals/slice100@10x.png" alt="" className='expanded-icon-img' />
+                <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontWeight: "500" }}>9.7</span>
+              </div>
+            </div>
+            <span className="country-name" style={{ color: '#0B6E85', textAlign: "left"}}>NY, USA</span>
             <div className="info-content" style={{ textAlign: "left", color: 'white' }}>
-              <FaAngleRight color="cyan" size={12} style={{ padding: "5px 0" }} />
-              <div>{info}</div>
+              <FaAngleRight color="cyan" size={16} style={{ padding: "10px 0" }} />
+              <div style={{fontWeight:"500", marginTop: "10px"}}>
+                <span>TERRORIST THREAT</span>
+                <br/>
+                <span>JFK AIRPORT</span>
+                <br/>
+                <span> 10 AUGUST</span>
+              </div>
             </div>
             <div className="expand-div" onClick={handleExpand}>
-              <h2 style={{ color: 'white' }}>Expand</h2>
+              <span style={{ color: 'white', fontSize: "24px" }}>Expand</span>
               <FaAngleRight color="cyan" size={20} style={{ padding: "5px 0" }} />
             </div>
           </div>

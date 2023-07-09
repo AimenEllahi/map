@@ -3,7 +3,7 @@ import "./App.css";
 import DisplayPoints from "./Components/DisplayPoints";
 import SearchBar from "./Components/SearchBar";
 import Sidebar from "./Components/SideBar";
-import HoverInfo from "./Components/HoverInfo";
+import ExpandedInfo from "./Components/ExpandedInfo";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Sidebar />
       <DisplayPoints />
       </div>
-      {/* <HoverInfo /> */}
+   
     </>
   
   );

@@ -2,26 +2,28 @@
     border-top: 1px solid white;
     width: 250px;
     height: 150px;
-    background-color: #032933;
+    background-color: #022027;
     padding: 10px;
-    color: cyan;
+    opacity: 0.95;
 }
   
   .country-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
+    font-size: 16px;
   }
   
   .country-name {
-    font-weight: bold;
+    font-weight: 600;
+   
   }
   
   .expand-div {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: left;
     bottom: 5px;
     right: 5px;
     cursor: pointer;
@@ -33,18 +35,14 @@
     line-height: 1.4;
   }
   
-/*expanded*/
-.hover-info-container-x{
-    border-left: 1px solid white;
-    width: 400px;
-    height: 550px;
-    background-color: #032933;
-    padding: 0 10px;
-    color: cyan;
-}
-
-
-.cross-icon:hover{
+  .cross-icon {
+    background-color: #022027;
+    width: 20px;
+    opacity: 0.6;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: -20px;
     cursor: pointer;
-}
-
+  }
+  

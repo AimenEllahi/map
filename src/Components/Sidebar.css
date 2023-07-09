@@ -2,10 +2,21 @@
     margin-top: 5px;
     width: 20%; /* Adjust the width according to your design */
     height: 100vh; /* Set the desired height */
-    background-color: #075e74; /* Set the background color */
+    background-color: #084351; /* Set the background color */
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .heading-name{
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .subheading-name{
+    padding: 2px 10px;
+    font-size: 14px;
   }
   
   .white-rec {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import './ExpandedInfo.css';
 
 function ExpandedInfo() {
   const [isOpen, setIsOpen] = useState(true);
@@ -16,62 +17,97 @@ function ExpandedInfo() {
     <div className="hover-info-container-x">
       <div className="country-info-x">
         <div style={{display: "flex", justifyContent: "space-between" }}>
-        <h2 className="country-name-x" style={{ color: 'cyan'}}>
+        <h2 className="country-name-x" style={{ color: 'white'}}>
           NEW YORK CITY
           </h2>
-            <FaTimes style={{padding: "15"}} onClick={handleClose} color="white" size={16} className='cross-icon' />
-         
+          <div className="cross-icon-expanded" onClick={handleClose}>
+            <FaTimes color="white" size={16} />
+          </div>
         </div>
         <div className="info-content-x" >
           <div style={{ color: 'white', textAlign: 'left', display: "flex" }}>
             <div>
-            <span style={{ color: 'white' }}>NEW YORK, USA</span>
-            <h3 style={{ color: 'cyan' }}>TERRORISM</h3>
-            <p>
-              LOCATION<br />
+            <span className='expanded-heading' >NEW YORK, USA</span>
+            <br/>
+            <br/>
+            <span className='expanded-heading' style={{color: "red"}}>TERRORISM</span>
+            <br/>
+            
+            <p className='expanded-content'>
+            <span className='expanded-heading'>LOCATION</span>
+              <br />
               JOHN F KENNEDY INTL AIRPORT<br />
               QUEENS, NY 11430<br />
               UNITED STATES OF AMERICA
             </p>
-            <p>
-              FROM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 AUG 2023 – 10:00<br />
-              CREDIBILITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VERY HIGH<br />
-              TILL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 AUG 2023 – 23:59<br />
-              IMPACT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXTREME
-            </p>
-            <h3 style={{ color: 'cyan' }}>THREAT DESCRIPTION</h3>
-            <p>
+            <div className='expanded-content'>
+               <table className='expanded-table'>
+               <tbody>
+               <tr>
+              <td>
+              <span className='expanded-heading'>FROM</span>
+              <span style={{ marginLeft: "10px", color: "white", fontWeight: "500" }}>10 AUG 2023 – 10:00</span>
+              </td>
+              <td>
+              <span className='expanded-heading'>CREDIBILITY</span>
+              <span style={{ marginLeft: "10px", color: "white", fontWeight: "500" }}>VERY HIGH</span>
+              </td>
+              </tr>
+              <tr>
+              <td>
+              <span className='expanded-heading'>TILL</span>
+              <span style={{ marginLeft: "10px", color: "white", fontWeight: "500" }}>10 AUG 2023 – 10:00</span>
+              </td>
+              <td>
+              <span className='expanded-heading'>IMPACT</span>
+              <span style={{ marginLeft: "10px", color: "white", fontWeight: "500" }}>EXTREME</span>
+              </td>
+              </tr>
+                </tbody>
+                </table>
+            </div>
+
+           
+            <span className='expanded-heading'>THREAT DESCRIPTION</span>
+            <p className='expanded-content'>
               Multiple sources describe a credible threat of violent
               and lethal attacks by an Islamic State sympathizing hate
               group called American Jihad (AJ). AJ made several threats
               on social media against airlines and specifically JFK Airport 
               Terminal 4. Verified by other sources.
             </p>
-            <h3 style={{ color: 'cyan' }}>POTENTIAL TARGETS</h3>
-            <ul>
-              <li>Airlines, aircraft, and their staff</li>
-              <li>Corporate aircraft and their staff</li>
-              <li>Individual travelers</li>
-            </ul>
-            <h3 style={{ color: 'cyan' }}>SOURCES</h3>
-            <p>
+            <span className='expanded-heading'>POTENTIAL TARGETS</span>
+            <p className='expanded-content'>
+              • Airlines, aircrafts and their staff<br />
+              • JFK Airport Terminal 4<br />
+              • Passengers<br />
+            </p>
+            <span className='expanded-heading'>SOURCES</span>
+            <p className='expanded-content'>
               • Social (multiple)<br />
               • HUMINT
             </p>
-            <h3 style={{ color: 'cyan' }}>RISK SCORE HISTORY</h3>
+           
            
             </div>
             <div>
-            <h3 style={{ color: 'white', backgroundColor: "#075e74", padding: "5px" }}>PREDICTION</h3>
+            <div style={{ display: "flex", justifyContent: "space-between", width: "100px" }}>
+            <span className='expanded-heading'>RISK SCORE</span>
+            <div style={{ position: "relative", width: "30px", height: "30px" }}>
+            <img style={{ width: "100%" }} src="/Visuals/slice100@10x.png" alt="" className='expanded-icon-img' />
+            <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontWeight: "500" }}>9.7</span>
+            </div>
+            </div>
+            <h3 className='expanded-icon-heading' >PREDICTION</h3>
             <div style={{display: "flex", justifyContent: "space-between"}}>
-              <div style={{width: "24px", height: "24px", backgroundColor: "#075e74", borderRadius: "8px"}}>
-                <img src="/Visuals/slice16@10x.png" alt="" style={{width: "100%"}} />
+              <div className='expanded-icon' >
+                <img src="/Visuals/slice16@10x.png" alt="" className='expanded-icon-img'/>
               </div>
-              <div style={{width: "24px", height: "24px", backgroundColor: "#075e74", borderRadius: "8px"}}>
-                <img src="/Visuals/slice14@10x.png" alt="" style={{width: "100%"}} />
+              <div className='expanded-icon' >
+                <img src="/Visuals/slice14@10x.png" alt="" className='expanded-icon-img'/>
               </div>
-              <div style={{width: "24px", height: "24px", backgroundColor: "#075e74", borderRadius: "8px"}}>
-                <img src="/Visuals/slice17@10x.png" alt="" style={{width: "100%"}} />
+              <div className='expanded-icon' >
+                <img src="/Visuals/slice17@10x.png" alt="" className='expanded-icon-img'/>
               </div>
             </div>
             </div>

@@ -1,6 +1,6 @@
 .top-bar{
     height: 80px;
-    background-color: #075e74;
+    background-color: #084351;
     display: flex;
     justify-content: center;
 }
@@ -30,6 +30,40 @@
     background-color:#043744;
     border:none;
 }
+
+
+.logo-container {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #043744;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 12px;
+    padding: 5px;
+  }
+  
+  .logo {
+    width: 100%;
+  }
+  
+  
+.logo-container1 {
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    left: 0;
+    margin-left: 15px;
+    margin-top: 22px;
+    padding: 5px;
+  }
+  
+  .logo1 {
+    width: 100%;
+  }
+  
 
 
 /* Path: maps\src\Components\Map\index.css */

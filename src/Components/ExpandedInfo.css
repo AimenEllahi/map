@@ -1,0 +1,62 @@
+/*expanded*/
+.hover-info-container-x{
+    border-left: 1px solid white;
+    width: 450px;
+    height: 550px;
+    background-color: #022027;
+    padding: 0 10px;
+    opacity: 0.9;
+}
+
+.cross-icon-expanded{
+    background-color: #022027;
+    width: 20px;
+    opacity: 0.6;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.cross-icon-expanded:hover{
+    cursor: pointer;
+}
+
+.expanded-heading{
+    color: #0B6E85;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.expanded-icon-heading{
+    color: white;
+    background-color: #0B6E85;
+    padding: 8px 15px;
+    border-radius: 7px;
+}
+
+.expanded-icon{
+    width: 28px;
+    height: 28px;
+    background-color: #0B6E85;
+    border-radius: 8px;
+}
+
+.expanded-icon-img{
+    width: 100%;
+}
+
+.expanded-content{
+    font-size: 13px ;
+}
+
+.expanded-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+.expanded-table td {
+    padding: 2px;
+   
+  }
+  
