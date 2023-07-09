@@ -77,12 +77,24 @@ const DisplayPoints = () => {
         elementType: "geometry",
         stylers: [{ color: "#0B6E85" }],
       },
-      
-        {
-          featureType: "poi",
-          elementType: "labels",
-          stylers: [{ visibility: "off" }],
-        },
+      {
+        featureType: "landscape",
+        elementType: "labels",
+        stylers: [{ visibility: "off" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels",
+        stylers: [{ visibility: "off" }],
+      },
+      {
+        featureType: "cou"
+      },
+      {
+        featureType: "road",
+        elementType: "labels",
+        stylers: [{ visibility: "off" }],
+      }
       // Add more styles for other map elements as needed
     ],
     gestureHandling: "greedy",

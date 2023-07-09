@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import './ExpandedInfo.css';
+import './styles/ExpandedInfo.css';
 
 function ExpandedInfo() {
   const [isOpen, setIsOpen] = useState(true);

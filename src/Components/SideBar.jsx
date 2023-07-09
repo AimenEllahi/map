@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Sidebar.css";
+import "./styles/Sidebar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //up arrow
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';

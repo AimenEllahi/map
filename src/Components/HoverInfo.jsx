@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaAngleRight, FaTimes } from 'react-icons/fa';
-import './HoverInfo.css';
+import './styles//HoverInfo.css';
 import ExpandedInfo from './ExpandedInfo';
 
 function HoverInfo() {
