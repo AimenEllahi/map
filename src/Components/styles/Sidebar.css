@@ -28,12 +28,55 @@
     transition: background-color 0.3s ease;
   }
 
-  .white-rec:hover {
+  .white-rec:hover{
     cursor: pointer;
+ }
+
+  .white-rec.toggled {
     background-color: white;
   }
+  
+  .side-menu {
+    max-height: 500px; /* Set an initial max-height for the transition */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  
+  .side-menu-hidden {
+    max-height: 0; /* Set max-height to 0 to hide the menu */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .sign-btn{
+    border: 2px solid cyan;
+    background: transparent;
+    color: white;
+    padding: 2px 14px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .sign-btn:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #062b35;
+  }
+  
+
 /*   
   .white-rec.active {
     background-color: white;
   }
-   */
+*/
+
+.display-icon-container{
+  width: 35px;
+  height: 35px;
+}
+
+.display-icon{
+  width : 100%;
+}
